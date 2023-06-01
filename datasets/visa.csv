@@ -1,0 +1,163 @@
+entity,code ,year,total
+Australia,AUS,2005,341400
+Australia,AUS,2006,376530
+Australia,AUS,2007,437440
+Australia,AUS,2008,501340
+Australia,AUS,2009,519790
+Australia,AUS,2010,437930
+Australia,AUS,2011,431780
+Australia,AUS,2012,467330
+Australia,AUS,2013,482090
+Australia,AUS,2014,464680
+Australia,AUS,2015,465250
+Australia,AUS,2016,489280
+Australia,AUS,2017,540150
+Australia,AUS,2018,527520
+Australia,AUS,2019,550400
+Australia,AUS,2020,506850
+Australia,AUS,2021,146000
+Australia,AUS,2022,394970
+New South Wales,NSW,2005,125180
+New South Wales,NSW,2006,132750
+New South Wales,NSW,2007,150600
+New South Wales,NSW,2008,170960
+New South Wales,NSW,2009,169020
+New South Wales,NSW,2010,144210
+New South Wales,NSW,2011,141980
+New South Wales,NSW,2012,140860
+New South Wales,NSW,2013,152630
+New South Wales,NSW,2014,155530
+New South Wales,NSW,2015,160910
+New South Wales,NSW,2016,170890
+New South Wales,NSW,2017,198300
+New South Wales,NSW,2018,191450
+New South Wales,NSW,2019,194270
+New South Wales,NSW,2020,172430
+New South Wales,NSW,2021,70530
+New South Wales,NSW,2022,145820
+Victoria,VIC,2005,81230
+Victoria,VIC,2006,89860
+Victoria,VIC,2007,108600
+Victoria,VIC,2008,123450
+Victoria,VIC,2009,132640
+Victoria,VIC,2010,109130
+Victoria,VIC,2011,104900
+Victoria,VIC,2012,112280
+Victoria,VIC,2013,119250
+Victoria,VIC,2014,122250
+Victoria,VIC,2015,128170
+Victoria,VIC,2016,140220
+Victoria,VIC,2017,159630
+Victoria,VIC,2018,161170
+Victoria,VIC,2019,168310
+Victoria,VIC,2020,150640
+Victoria,VIC,2021,27140
+Victoria,VIC,2022,120480
+Queensland,QLD,2005,65390
+Queensland,QLD,2006,73070
+Queensland,QLD,2007,86490
+Queensland,QLD,2008,99670
+Queensland,QLD,2009,103110
+Queensland,QLD,2010,84890
+Queensland,QLD,2011,84250
+Queensland,QLD,2012,93210
+Queensland,QLD,2013,92800
+Queensland,QLD,2014,83800
+Queensland,QLD,2015,78980
+Queensland,QLD,2016,83170
+Queensland,QLD,2017,87820
+Queensland,QLD,2018,85440
+Queensland,QLD,2019,91660
+Queensland,QLD,2020,85590
+Queensland,QLD,2021,23440
+Queensland,QLD,2022,58580
+South Australia,SA,2005,16620
+South Australia,SA,2006,20550
+South Australia,SA,2007,23490
+South Australia,SA,2008,25160
+South Australia,SA,2009,27260
+South Australia,SA,2010,24820
+South Australia,SA,2011,20160
+South Australia,SA,2012,22980
+South Australia,SA,2013,22580
+South Australia,SA,2014,23620
+South Australia,SA,2015,23280
+South Australia,SA,2016,23410
+South Australia,SA,2017,23820
+South Australia,SA,2018,24100
+South Australia,SA,2019,26650
+South Australia,SA,2020,27740
+South Australia,SA,2021,6020
+South Australia,SA,2022,20940
+Western Australia,WA,2005,30560
+Western Australia,WA,2006,39980
+Western Australia,WA,2007,47170
+Western Australia,WA,2008,53830
+Western Australia,WA,2009,66150
+Western Australia,WA,2010,69710
+Western Australia,WA,2011,57920
+Western Australia,WA,2012,64930
+Western Australia,WA,2013,77980
+Western Australia,WA,2014,74380
+Western Australia,WA,2015,60030
+Western Australia,WA,2016,53290
+Western Australia,WA,2017,51540
+Western Australia,WA,2018,48640
+Western Australia,WA,2019,44190
+Western Australia,WA,2020,48080
+Western Australia,WA,2021,50400
+Western Australia,WA,2022,12970
+Tasmania,TAS,2005,5150
+Tasmania,TAS,2006,3170
+Tasmania,TAS,2007,3400
+Tasmania,TAS,2008,3440
+Tasmania,TAS,2009,3900
+Tasmania,TAS,2010,4290
+Tasmania,TAS,2011,4010
+Tasmania,TAS,2012,3470
+Tasmania,TAS,2013,3780
+Tasmania,TAS,2014,3920
+Tasmania,TAS,2015,4190
+Tasmania,TAS,2016,4210
+Tasmania,TAS,2017,4210
+Tasmania,TAS,2018,4700
+Tasmania,TAS,2019,5110
+Tasmania,TAS,2020,5880
+Tasmania,TAS,2021,6510
+Tasmania,TAS,2022,1610
+Northern Territory,NT,2005,4910
+Northern Territory,NT,2006,4430
+Northern Territory,NT,2007,3910
+Northern Territory,NT,2008,4560
+Northern Territory,NT,2009,4710
+Northern Territory,NT,2010,5540
+Northern Territory,NT,2011,4670
+Northern Territory,NT,2012,4810
+Northern Territory,NT,2013,6750
+Northern Territory,NT,2014,7840
+Northern Territory,NT,2015,6260
+Northern Territory,NT,2016,6900
+Northern Territory,NT,2017,6370
+Northern Territory,NT,2018,6900
+Northern Territory,NT,2019,5020
+Northern Territory,NT,2020,5550
+Northern Territory,NT,2021,4120
+Northern Territory,NT,2022,1450
+Australian Capital Territory,ACT,2005,8450
+Australian Capital Territory,ACT,2006,5410
+Australian Capital Territory,ACT,2007,5830
+Australian Capital Territory,ACT,2008,6420
+Australian Capital Territory,ACT,2009,7350
+Australian Capital Territory,ACT,2010,8190
+Australian Capital Territory,ACT,2011,8270
+Australian Capital Territory,ACT,2012,7270
+Australian Capital Territory,ACT,2013,9490
+Australian Capital Territory,ACT,2014,8690
+Australian Capital Territory,ACT,2015,8990
+Australian Capital Territory,ACT,2016,9520
+Australian Capital Territory,ACT,2017,9470
+Australian Capital Territory,ACT,2018,10330
+Australian Capital Territory,ACT,2019,10970
+Australian Capital Territory,ACT,2020,9950
+Australian Capital Territory,ACT,2021,9380
+Australian Capital Territory,ACT,2022,2810

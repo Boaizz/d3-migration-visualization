@@ -1,0 +1,20 @@
+entity,country_code,region_code,Population,Immigrants,Area,region,subregion,rank
+United States,US,NA,339996563,50632836,9372610,North America,Northern America,1
+Germany,DE,EU,83294633,15762457,357114,Europe,Western Europe,2
+Saudi Arabia,SA,AS,36947025,13454842,2149690,Asia,"Western Asia, The Middle East",3
+Russia,RU,EU,144444359,11636911,17098242,Europe,Eastern Europe,4
+United Kingdom,GB,EU,67736802,9359587,242900,Europe,Northern Europe,5
+United Arab Emirates,AE,AS,9516871,8716332,83600,Asia,"Western Asia, The Middle East",6
+France,FR,EU,64756584,8524876,551695,Europe,Western Europe,7
+Canada,CA,NA,38781291,8049323,9984670,North America,Northern America,8
+Australia,AU,AU,26439111,7685860,7692024,Oceania,Australia and New Zealand,9
+Spain,ES,EU,47519628,6842202,505992,Europe,Southern Europe,10
+Italy,IT,EU,58870762,6386998,301336,Europe,Southern Europe,11
+Turkey,TR,AS,85816199,6052652,783562,Asia,"Western Asia, The Middle East",12
+Ukraine,UA,EU,36744634,4997387,603500,Europe,Eastern Europe,13
+Kazakhstan,KZ,AS,19606633,3732073,2724900,Asia,Central Asia,15
+Thailand,TH,AS,71801279,3632496,513120,Asia,South-Eastern Asia,16
+Malaysia,MY,AS,34308525,3476560,330803,Asia,South-Eastern Asia,17
+Jordan,JO,AS,11337052,3457691,89342,Asia,"Western Asia, The Middle East",18
+Pakistan,PK,AS,240485658,3276580,881912,Asia,"Southern Asia, South Central Asia",19
+Kuwait,KW,AS,4310108,3110159,17818,Asia,"Western Asia, The Middle East",20

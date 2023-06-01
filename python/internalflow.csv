@@ -1,0 +1,57 @@
+Source,Destination,Value
+New South Wales,Victoria,14241
+New South Wales,Queensland,27640
+New South Wales,South Australia,3778
+New South Wales,Western Australia,4913
+New South Wales,Tasmania,1953
+New South Wales,Nothern Territory,1788
+New South Wales,Australia Capital Territory,6995
+Victoria,New South Wales,16112
+Victoria,Queensland,16708
+Victoria,South Australia,4666
+Victoria,Western Australia,5105
+Victoria,Tasmania,2339
+Victoria,Nothern Territory,1765
+Victoria,Australia Capital Territory,2074
+Queensland,New South Wales,19220
+Queensland,Victoria,9560
+Queensland,South Australia,2689
+Queensland,Western Australia,4284
+Queensland,Tasmania,2096
+Queensland,Nothern Territory,2288
+Queensland,Australia Capital Territory,1971
+South Australia,New South Wales,3148
+South Australia,Victoria,4038
+South Australia,Queensland,3341
+South Australia,Western Australia,1492
+South Australia,Tasmania,297
+South Australia,Nothern Territory,895
+South Australia,Australia Capital Territory,550
+Western Australia,New South Wales,3883
+Western Australia,Victoria,4113
+Western Australia,Queensland,3940
+Western Australia,South Australia,1215
+Western Australia,Tasmania,607
+Western Australia,Nothern Territory,986
+Western Australia,Australia Capital Territory,520
+Tasmania,New South Wales,1368
+Tasmania,Victoria,2112
+Tasmania,Queensland,2106
+Tasmania,South Australia,501
+Tasmania,Western Australia,665
+Tasmania,Nothern Territory,133
+Tasmania,Australia Capital Territory,188
+Nothern Territory,New South Wales,1619
+Nothern Territory,Victoria,1454
+Nothern Territory,Queensland,2776
+Nothern Territory,South Australia,1215
+Nothern Territory,Western Australia,1236
+Nothern Territory,Tasmania,189
+Nothern Territory,Australia Capital Territory,330
+Australia Capital Territory,New South Wales,6227
+Australia Capital Territory,Victoria,1851
+Australia Capital Territory,Queensland,2395
+Australia Capital Territory,South Australia,479
+Australia Capital Territory,Western Australia,413
+Australia Capital Territory,Tasmania,168
+Australia Capital Territory,Nothern Territory,258

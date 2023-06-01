@@ -1,0 +1,186 @@
+
+head, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+  }
+
+  header section {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header section h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+  }
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.4), #009688), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+.container {
+  padding: 25px 25%;
+}
+  main h2 { text-align: center; }
+  main h3 { font-size: 20px; text-align: center; }
+  main label { font-weight: bold; }
+  .height-cap { height: 42px; }
+  .chartLabel { font-weight: bold; font-size: 12px; }
+  
+  #continentColorScale {
+    display: none;
+}
+
+.card {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  width: 33%;
+}
+
+.card:hover {
+  background: #fff;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+}
+.state {
+    font-size: 20px;
+    line-height: 42px;
+    text-transform: uppercase;
+      margin-right: 35px;
+      padding-right: 55px;
+   
+  }
+  /* .stateHovered{
+    stroke-width: 0.5;
+    opacity: 1;
+    transition: 250ms;
+  } */
+
+/* #stateSelected {
+    opacity: 1;
+    stroke-width: 1;
+  } */
+  
+.pieArc { opacity: 0.8; }
+.pieArc:hover { opacity: 5; }
+
+  
+
+
+.bubbles:hover {
+  cursor: pointer;
+}
+
+.bubbles circle:hover {
+  stroke: black;
+  cursor: pointer;
+}
+
+#bubble-plot-selections select {
+  width: 400px;
+  display: block;
+}
+
+#detailed_info {
+  margin-top: -40px;
+  padding-top: -40px;
+}
+
+h1, h2 {
+  font-weight: 300;
+  font-size: 30px;
+  color: #080808;
+  transition: all 0.4s ease 0s;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+/*button design*/
+button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  padding: 0 18px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+#timeline {
+  background-color: #fafbfd;
+  border: 1px solid #e1e1e1;
+}
+#timeline p { color: #777777; }
+#timeline button { background-color: transparent; border: none; }
+#timeline button i { color: #777777; font-size: 25px; }
+#yearValue { font-weight: bold; }
+.leftBorder { border-left: 1px solid #cccccc; }
+.rightBorder { border-right: 1px solid #cccccc; }
+
+
+
+#sankey {
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+.sankey_heading 
+{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  padding-top: 0.25rem;
+  color: darkgreen;
+}
+.bubble_scale 
+{
+  padding-left: 3rem;
+}
+/* .button_bubble 
+{
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.paddding_bubble {
+  padding: 1rem;
+  width: 50%;
+} */
+
+
+#sankey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* use viewport units to make the container full height */
+}
+#bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
