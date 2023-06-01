@@ -196,7 +196,7 @@ async function drawPieChart(state, year, file, initFunc,  visaFunc) {
       var baseArcGenerator = d3.arc().outerRadius(1).innerRadius(0.5);
       var arcGenerator = d3.arc().outerRadius(outerRadius).innerRadius(innerRadius);
       // color scale
-      var color = d3.scaleOrdinal(d3.schemeCategory10);
+      var color = d3.scaleOrdinal(["#F0E442", "#56B4E9",  "#CC79A7",  "#009E73", "#E69F00", "#0072B2", "#D55E00", "#000000" ]);
       var arcs = svg.selectAll("arc")
         .data(pieGenerator(dataset))
         .enter()

@@ -4,7 +4,7 @@ function drawBubbleChart(data, json) {
         scaleY;
     var forceSimulation;
     var regions = new Set(data.map(function(country) { return country.region_code; }));
-    var color = d3.scaleOrdinal(d3.schemeCategory10)
+    var color = d3.scaleOrdinal(["#F0E442", "#56B4E9",  "#CC79A7",  "#009E73", "#E69F00", "#0072B2", "#D55E00", "#000000" ])
           .domain(Array.from(regions));
     var w = 1200,
         h = 600;

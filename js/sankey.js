@@ -3,10 +3,8 @@ function drawSankey(data) {
     
     var w = 1200;
     var h = 800;
-
     // color scale
-    color = d3.scaleOrdinal(d3.schemeCategory10);
-    
+    var color = d3.scaleOrdinal(["#F0E442", "#56B4E9",  "#CC79A7",  "#009E73", "#E69F00", "#0072B2", "#D55E00", "#000000" ]);
     var svg = d3
       .select("#sankey")
       .append("svg")
@@ -221,7 +219,7 @@ function drawSankey(data) {
 async function loadDataAndCreateSankey() {
   try
   {
-    var data = await d3.json("/json/sankey.json");  //load data from JSON file
+    var data = await d3.json("https://boaizz.github.io/Migration-Visualization/json/sankey.json");  //load data from JSON file
     drawSankey(data);
   } catch (error) {
     console.error("Error loading data", error);
