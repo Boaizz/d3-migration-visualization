@@ -208,6 +208,24 @@ async function drawPieChart(state, year, file, initFunc,  visaFunc) {
         .attr("fill", (d, i) => color(i))
         .attr("d", (d, i) => baseArcGenerator(d, i))
         .attr("class", "pieArc")
+        .on("mouseover", function(event,d) {
+          console.log(d);
+          d3.selectAll(".pieArc")
+              .transition()
+              .duration(200)
+              .style("opacity", .1)//fade other arcs
+      
+  
+          d3.select(this) //highlight this arc
+              .transition()
+              .duration(200)
+              .style("opacity", 2) })  // highlight the arc on mouseover
+        .on("mouseout", function() { 
+          d3.selectAll(".pieArc")
+          .transition()
+          .duration(200)
+          .style("opacity", 0.9)//opacity 
+        })  // remove highlight on mouseout
         .append("title")
         .text((d, i) => `Visa Type: ${visaFunc(i)}\nNumber: ${formatValue(d.data)} (${unit})\nShare: ${(d.data / pieData.total * 100).toFixed(2)}%`);
   
