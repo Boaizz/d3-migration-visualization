@@ -72,7 +72,7 @@ function drawBubbleChart(data, json) {
           .attr("fill", function(d) { return color(d); })
           .on("mouseover", function(event, d) {
             console.log(continentGroupScale(d));
-            g.selectAll(".bubble").style("opacity", 0.2);
+            g.selectAll(".bubble").style("opacity", 0.1);
             g.selectAll('.bubble[data-region="' + d + '"]').style("opacity", 1);   // highlight the bubble that is in that continent
         })
         .on("mouseout", function(d) {
@@ -150,7 +150,7 @@ function drawBubbleChart(data, json) {
   legendData.forEach((value, i) => {
     var radius = circleRadiusScale(value);
     legendGroup.append("circle")
-      .attr("cx", 100)
+      .attr("cx", 900)
       .attr("cy", radius)
       .attr("r", radius)
       .attr("fill", "none")
@@ -158,13 +158,13 @@ function drawBubbleChart(data, json) {
       .attr("stroke-width", 1)
       .style("opacity", 0.7);
     legendGroup.append("text")
-      .attr("x", 200)
+      .attr("x", 1000)
       .attr("y", radius )
-      .text(value)
+      .text(value + " ("+ unit + ")")
       .style("font-size", "12px");
     legendGroup.append("line")
-    .attr('x1', 100 + radius )
-    .attr('x2', 200)
+    .attr('x1', 900 + radius )
+    .attr('x2', 1000)
     .attr('y1', radius )
     .attr('y2', radius )
     .attr('stroke', 'black')
@@ -390,8 +390,8 @@ function drawBubbleChart(data, json) {
             .attr("class", "y-axis-label")
             .attr("text-anchor", "middle")
             .attr("transform", "rotate(-90)")
-            .attr("x", -h / 3 - padding)
-            .attr("y", padding / 5 )
+            .attr("x", -120)
+            .attr("y", padding * 2  )
             .text("Population (person)")
             .attr("font-size", "12px")
             .attr("font-weight", "bold");
