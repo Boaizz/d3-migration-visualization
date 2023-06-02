@@ -191,7 +191,8 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* use viewport units to make the container full height */
+  padding: 50px; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
 }
 #bubble {
   display: flex;
