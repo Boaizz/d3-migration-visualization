@@ -35,6 +35,9 @@
       </ul>
     </nav>
       <div class="container-fluid row">
+      <h3 class="main_heading mb-4"> Net Overseas Migration By State And Territory, And Visa Type</h3>
+      <p class="col-md-8 offset-md-2 mb-3">Exploring the pattern and trend of the external arrivals of Australia from 2005 to 2022. The following visualization allows you to contrast the migration to Australia. The pie chart on the left of the screen will show visa groups based on the state and visa type you choose.</p>
+      <p class="col-md-8 offset-md-2 mb-5 text-danger"><strong>Note:</strong> Drag the timeline and hover over the chart to view specific value breakdown for an year of your preference.</p>
       <section class="col-7">
         <h3>Overseas migrant arrivals in Australia (2005-2022)</h3>
         <p id="choropleth"></p>
@@ -42,11 +45,11 @@
       
   
       <section class="col-5">
+        <h3 id="pieChartTitle"></h3>
         <select id="pieSelector" class="form-select">
           <option value="temporary" selected>Temporary Visa</option>
           <option value="pernament">Pernament Visa</option>
         </select>
-        <h3 id="pieChartTitle"></h3>
         <p id="pie"></p>
       </section>
   

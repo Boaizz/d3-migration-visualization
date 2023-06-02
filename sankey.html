@@ -35,10 +35,15 @@
       </ul>
     </nav>
     <section>
-        <h3 class="sankey_heading">Regional Internal Migration Across States</h3>
-    </section>
-        <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
-        <p id="sankey"></p>
+        <h3 class="main_heading mb-4">Regional Internal Migration Across States</h3>
+        <div class="container-fluid row">
+            <p class="col-md-8 offset-md-2 mb-3">Exploring the pattern and trend of the interal migration flows between states within Australia in the 1st quarter of 2021 . The following visualization allows you to contrast the migration between each states within Australia.</p>
+            <p class="col-md-8 offset-md-2 mb-5 text-danger"><strong>Note:</strong> Hover over the nodes and the links to view specific value of each state and flow.</p>
+            <h3 class="col-md-7 offset-md-2 mb-3">Departures From</h3>
+            <h3 class="col-md-3 mb-3">Arrivals To</h3>
+            <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+            <p id="sankey"></p>
+        </div>
     </section>
     
 </body>

@@ -25,7 +25,8 @@ header {
   }
 .container {
   padding: 25px 25%;
-}
+} 
+  h2{  text-align: center; }
   main h2 { text-align: center; }
   main h3 { font-size: 20px; text-align: center; }
   main label { font-weight: bold; }
@@ -147,7 +148,7 @@ button:active {
   padding-left: 1.5rem;
   padding-top: 1.5rem;
 }
-.sankey_heading 
+.main_heading 
 {
   text-align: center;
   text-transform: uppercase;
@@ -159,25 +160,38 @@ button:active {
 {
   padding-left: 3rem;
 }
-/* .button_bubble 
+ .center
 {
-  padding-top: 1.5rem;
+  
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.paddingmenu
+{
+  padding-left: 1rem;
+  padding-right: 3rem;
 }
 .paddding_bubble {
   padding: 1rem;
   width: 50%;
-} */
+}
+.paddingbutton
+{
+  padding-left: 2rem;
+}
+.paddingtop
+{
+  padding-top: 1.5rem;
+}
 
 
 #sankey {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* use viewport units to make the container full height */
+  height: 80vh; /* use viewport units to make the container full height */
 }
 #bubble {
   display: flex;

@@ -141,7 +141,7 @@ function drawBubbleChart(data, json) {
     });;
             
     changeToFlag();
-    var legendData = [1000000, 100000000, 500000000]; // specify the area values for the legend circles
+    var legendData = [10000000, 100000000, 250000000, 500000000]; // specify the area values for the legend circles
 
     var legendGroup = svg.append("g")
     .attr("class", "area-legend")

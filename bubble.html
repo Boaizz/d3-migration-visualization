@@ -32,7 +32,10 @@
         </ul>
     </nav>
        <section>
-        <h3 class="sankey_heading" >Global Comparison</h3>
+        <h3 class="main_heading" >Global Comparison</h3>
+        <p class="col-md-8 offset-md-2 mb-3">Exploring the migration statistics between Australia and different parts of the world . The following visualization allows you to compare the immigration between Australia and other countries.</p>
+        <p class="col-md-8 offset-md-2 mb-5 text-danger"><strong>Note:</strong> 
+          Select Visual Options to add Axes. Hover over a color in the Colors radio to categorize a country based on its continent. Hover over the bubble to see the value and details of the country the bubble represents.</p>
         <style>
           .button_bubble {
             display: flex;
@@ -44,32 +47,48 @@
           }
         </style>
         
-        <div id="bubble-container">
-          <p>View by:</p>
-          <select id="groupingSelector" class="form-select-sm paddding_buble">
-            <option value="all" selected>All</option>
-            <option value="visual">Visual (With Axis)</option>
-          </select>
-          <p>Bubble Size:</p>
-          <select id="radiusSelector" class="form-select-sm paddding_buble">
-            <option value="Population">Population</option>
-            <option value="Immigrants">Immigrants</option>
-            <option value="Area">Area</option>
-          </select>
+        <div id="bubble-container" class="center">
+          <div class="paddingmenu">
+            <p>View by:</p>
+            <select id="groupingSelector" class="form-select-sm paddding_buble">
+              <option value="all" selected>Bubble Radius</option>
+              <option value="visual">Visual (With Axis)</option>
+            </select>
+          </div>
+          <div>
+            <p>Bubble Size:</p>
+            <select id="radiusSelector" class="form-select-sm paddding_buble">
+              <option value="Population">Population</option>
+              <option value="Immigrants">Immigrants</option>
+              <option value="Area">Area</option>
+            </select>
+          </div>
         </div>
-        <br><div class="button-group">
-              <button id="resetZoomButton" class="btn btn-success">Reset Zoom</button>
-              <button id="removeLinesButton" class="btn btn-success">Reset Select Country</button>
-        <br></div>
-            <h5>Bubble Skin:</h5>
-            <div class="form-check form-check-inline paddding_buble">
-              <input class="form-check-input" type="radio" name="fill" id="colors" value="colors">
-              <label class="form-check-label" for="colors">Colors</label>
+        <br><div class="button-group center">
+            <div class="paddingbutton">
+              <button id="resetZoomButton" class="btn btn-success ">Reset Zoom</button>
             </div>
+            <div class="paddingbutton">
+              <button id="removeLinesButton" class="btn btn-success ">Reset Select Country</button>
+            </div>
+              
+              
+        <br></div>
+        <div class="center paddingtop">
+          <h5>Bubble Skin:</h5>
+            <div class="paddingbutton">
+              <div class="form-check form-check-inline paddding_buble">
+                <input class="form-check-input" type="radio" name="fill" id="colors" value="colors">
+                <label class="form-check-label" for="colors">Colors</label>
+              </div>
+            </div>
+           
             <div class="form-check form-check-inline paddding_buble">
               <input class="form-check-input" type="radio" name="fill" id="flags" value="flags" checked>
               <label class="form-check-label" for="flags">Flags</label>
             </div>
+        </div>
+            
    
         <div id="bubble" class="bubble_scale"></div>
         </section>
