@@ -141,38 +141,7 @@ function drawBubbleChart(data, json) {
     });;
             
     changeToFlag();
-    var legendData = [10000000, 100000000, 250000000, 500000000]; // specify the area values for the legend circles
-
-    var legendGroup = svg.append("g")
-    .attr("class", "area-legend")
-    .attr("transform", "translate(20, 20)"); // adjust the positioning of the legend group
-
-  legendData.forEach((value, i) => {
-    var radius = circleRadiusScale(value);
-    legendGroup.append("circle")
-      .attr("cx", 900)
-      .attr("cy", radius)
-      .attr("r", radius)
-      .attr("fill", "none")
-      .attr("stroke", "black")
-      .attr("stroke-width", 1)
-      .style("opacity", 0.7);
-    legendGroup.append("text")
-      .attr("x", 1000)
-      .attr("y", radius )
-      .text(value + " ("+ unit + ")")
-      .style("font-size", "12px");
-    legendGroup.append("line")
-    .attr('x1', 900 + radius )
-    .attr('x2', 1000)
-    .attr('y1', radius )
-    .attr('y2', radius )
-    .attr('stroke', 'black')
-    .style('stroke-dasharray', ('2,2'))
-
-
-  });
-
+    
     function removeLinesAndTexts() {
         //get all lines and texts
         const lines = document.querySelectorAll("line");
