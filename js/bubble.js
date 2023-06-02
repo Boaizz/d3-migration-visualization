@@ -141,7 +141,90 @@ function drawBubbleChart(data, json) {
     });;
             
     changeToFlag();
-    
+   //calculate min, mean, and max values based on the selected radius value
+var values = data.map(function(d) {
+    return parseInt(d[radiusSelector.value]);
+  });
+  var minValue = parseInt(d3.min(values));
+  var meanValue = parseInt(d3.mean(values));
+  var maxValue = parseInt(d3.max(values));
+  
+  //create the legendGroup and set its attributes
+  var legendGroup = svg.append("g")
+    .attr("class", "area-legend")
+    .attr("transform", "translate(20, 20)");
+  
+  //add circles and text for min, mean, and max values in the legendGroup
+  [minValue, meanValue, maxValue].forEach(function(value) {
+    var radius = circleRadiusScale(value);
+  
+    legendGroup.append("circle")
+      .attr("cx", 900)
+      .attr("cy", radius)
+      .attr("r", radius)
+      .attr("fill", "none")
+      .attr("stroke", "black")
+      .attr("stroke-width", 1)
+      .style("opacity", 0.7);
+  
+    legendGroup.append("text")
+      .attr("x", 1000)
+      .attr("y", radius)
+      .text(value + " (" + unit + ")")
+      .style("font-size", "12px");
+  
+    legendGroup.append("line")
+      .attr('x1', 900 + radius)
+      .attr('x2', 1000)
+      .attr('y1', radius)
+      .attr('y2', radius)
+      .attr('stroke', 'black')
+      .style('stroke-dasharray', ('2,2'));
+  });
+  
+  //function to update the legendGroup based on the selected radius value
+  function updateLegend() {
+    //calculate min, mean, and max values based on the selected radius value
+    values = data.map(function(d) {
+      return parseInt(d[radiusSelector.value]);
+    });
+    var minValue = parseInt(d3.min(values));
+    var meanValue = parseInt(d3.mean(values));
+    var maxValue = parseInt(d3.max(values));
+  
+    //update the circles and text in the legendGroup
+    legendGroup.selectAll("circle")
+      .data([minValue, meanValue, maxValue])
+      .attr("cy", function(value) {
+        return circleRadiusScale(value);
+      })
+      .attr("r", function(value) {
+        return circleRadiusScale(value);
+      });
+  
+    legendGroup.selectAll("line")
+      .data([minValue, meanValue, maxValue])
+      .attr('x1', function(value) {
+        return circleRadiusScale(value) + 900;
+      });
+  
+    legendGroup.selectAll("text")
+      .data([minValue, meanValue, maxValue])
+      .text(function(value) {
+        var type = "";
+        if (radiusSelector.value === "Population" || radiusSelector.value === "Immigrants") {
+          type = value + " (" + unit + ")";
+        } else if (radiusSelector.value === "Area") {
+          type = value + " (km2)";
+        }
+        return type;
+      });
+  }
+  
+  //update the legendGroup when the radiusSelector value changes
+  radiusSelector.addEventListener("change", function() {
+    updateLegend();
+  });
     function removeLinesAndTexts() {
         //get all lines and texts
         const lines = document.querySelectorAll("line");
@@ -160,7 +243,6 @@ function drawBubbleChart(data, json) {
         });
     }
 
-   
    //remove lines and text when clicking the Reset button
     document.getElementById("removeLinesButton").addEventListener("click", removeLinesAndTexts);  
     var speed = 0.03;  //force speed
@@ -169,7 +251,6 @@ function drawBubbleChart(data, json) {
         all: allBubbles(), //configuration for positioning bubbles in the center
         visual:visualImmigrants() //configuration for positioning bubbles based on Immigrants and Population
     };
-    
     
     function allBubbles() {
         return { //returns the force configuration for positioning bubbles in the center
