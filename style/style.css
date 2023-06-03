@@ -1,6 +1,6 @@
 
 head, body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Trirong", serif;
     background-color: lightgrey;
   }
 
@@ -12,7 +12,7 @@ head, body {
     transform: translateY(-50%);
   }
   header section h1 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Trirong", serif;
     font-size: 4rem;
   }
 
@@ -57,16 +57,6 @@ header {
       padding-right: 55px;
    
   }
-  /* .stateHovered{
-    stroke-width: 0.5;
-    opacity: 1;
-    transition: 250ms;
-  } */
-
-/* #stateSelected {
-    opacity: 1;
-    stroke-width: 1;
-  } */
   
 .pieArc { opacity: 0.8; }
 .pieArc:hover { opacity: 5; }
