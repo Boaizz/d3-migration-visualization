@@ -219,7 +219,7 @@ function drawSankey(data) {
 async function loadDataAndCreateSankey() {
   try
   {
-    var data = await d3.json("https://boaizz.github.io/Migration-Visualization/json/sankey.json");  //load data from JSON file
+    var data = await d3.json("https://boaizz.github.io/d3-migration-visualization/json/sankey.json");  //load data from JSON file
     drawSankey(data);
   } catch (error) {
     console.error("Error loading data", error);
